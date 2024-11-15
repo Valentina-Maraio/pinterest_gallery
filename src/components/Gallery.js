@@ -28,7 +28,7 @@ export default function Gallery() {
   return (
     <>
     <div className={styles.box}>
-      <h3>Testo</h3>
+      
     </div>
       <div className={styles.container}>
         {data.map((image) => (

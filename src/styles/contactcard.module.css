@@ -1,0 +1,42 @@
+.card {
+    width: 250px;
+    height: 230px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .profileImageWrapper {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 30px;
+  }
+
+  .profileImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .icon {
+    color: #666;
+    font-size: 18px;
+    text-decoration: none;
+  }
