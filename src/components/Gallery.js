@@ -26,21 +26,26 @@ export default function Gallery() {
   };
 
   return (
-    <div className={styles.container}>
-      {data.map((image) => (
-        <div key={image.id} className={styles.imageItem}>
-          <img src={image.src} alt={`Image ${image.id}`} onClick={() => handleModal(image)} />
-        </div>
-      ))}
-
-      {isOpen && (
-        <div className={styles.modal} onClick={handleOverlayClick}>
-          <div className={styles.modalContent}>
-            <img src={selectedImage.src} alt={`Image ${selectedImage.id}`} />
-            <button className={styles.button} onClick={closeModal}>Close</button>
-          </div>
-        </div>
-      )}
+    <>
+    <div className={styles.box}>
+      <h3>Testo</h3>
     </div>
+      <div className={styles.container}>
+        {data.map((image) => (
+          <div key={image.id} className={styles.imageItem}>
+            <img src={image.src} alt={`Image ${image.id}`} onClick={() => handleModal(image)} />
+          </div>
+        ))}
+
+        {isOpen && (
+          <div className={styles.modal} onClick={handleOverlayClick}>
+            <div className={styles.modalContent}>
+              <img src={selectedImage.src} alt={`Image ${selectedImage.id}`} />
+              <button className={styles.button} onClick={closeModal}>Close</button>
+            </div>
+          </div>
+        )}
+      </div>
+    </>
   );
 }
