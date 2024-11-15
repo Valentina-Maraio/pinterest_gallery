@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Jugend';
+    src: url('/Jugend.otf') format('opentype');
+    font-style: normal;
+  }
+
+.textWrapper {
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    top: 30px;
+    margin: 50px;
+  }
+
+  .textWrapper h2 {
+    color: white;
+  }
+  
+  .textWrapper h3 {
+    color: white;
+  }
+
+  .special {
+    font-family: 'Jugend', Arial, sans-serif;
+    letter-spacing: 3px;
+  }
+  
+  .textWrapper.loaded {
+    opacity: 1;
+    padding: 30px;
+    margin: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .textWrapper h2 {
+      color: white;
+    }
+    
+    .textWrapper h3 {
+      color: white;
+    }
+  }
+
+  @media (max-width: 748px) {
+    .textWrapper h2 {
+      color: white;
+    }
+    
+    .textWrapper h3 {
+      color: white;
+    }
+    
+  }

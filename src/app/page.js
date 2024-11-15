@@ -1,6 +1,10 @@
-import Gallery from "@/components/Gallery";
+"use client"
+
+import Message from "@/components/Message";
 import Image from "next/image";
 import styles from './page.module.css'
+import Menu from "@/components/Menu";
+import Logo from "@/components/Logo";
 
 export default function Home() {
   return (
@@ -15,9 +19,11 @@ export default function Home() {
           priority
         />
       </div>
+      <Logo/>
       <div className={styles.content}>
-        <Gallery />
+        <Message />
       </div>
+      <Menu/>
     </div>
   );
 }
