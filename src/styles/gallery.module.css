@@ -1,7 +1,19 @@
+.box {
+  height: 600px;
+}
+
+.box h3{
+ color: orange;
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+}
+
 .container {
     column-count: 3; /* Adjust the number of columns based on screen size */
     column-gap: 10px; 
-    padding: 20px;
+    padding: 50px;
   }
   
   .imageItem {
@@ -18,14 +30,51 @@
     border-radius: 16px;
   }
 
-  @media (max-width: 1200px) {
+  @media (min-width: 1200px) {
     .container {
-      column-count: 3;
+      column-count: 4;
     }
   }
   
   @media (max-width: 768px) {
     .container {
       column-count: 2;
+      padding: 20px;
     }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    position: relative;
+    padding: 32px;
+    background: white;
+    border-radius: 8px;
+  }
+  
+  .modalContent img {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+  
+  .button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 100;
   }
